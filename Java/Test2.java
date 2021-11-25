@@ -14,7 +14,7 @@ public class Test2
 		if(n%2 != 0)
 		{
 			System.out.println("Weird");
-		}
+  		}
 		else
 		{
 			if(n<5)
