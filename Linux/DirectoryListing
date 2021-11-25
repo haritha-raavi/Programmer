@@ -1,0 +1,194 @@
+Directory Listing:
+
+  --> When we use "ls -l" commands in displays in the following format....
+
+<< FilePermissions      HardLinks      UserName     GroupName     SizeOfTheFile     Month     Date      Time      FileName >>
+
+
+
+
+
+FILE_PERMISSIONS:
+
+    - : It indicates that it is a file.
+    d : It indicates it is an directory.
+    | : It indicates it is a link.
+
+
+	In the file permission, there are totally three permissions called user permissions, group permissions, 
+	others permissions.
+	The sequence of operations are:
+	   > read      -r
+	   > write     -w
+	   > execute   -x
+	In all the permissions the operations sequence is same. With the help of this we are able to know which permissions 
+	are assigned to the specified area( user ,group, others).
+
+	If there is a permission for read then it displays as "r" otherwise "-".It is common for other opeartions also.
+
+		EX:  rw-:
+    			  Here only read and write permissions are given, there is no execution permission.
+
+
+			-      rw-    rw-     r--:
+			|       |     |        |
+		      file   user  group    other
+		      type
+
+
+  	 This file permission shows that:
+   		> It is a file
+  		> the user permissions are read and write.
+  		> the group permissions are read and write.
+   		> the other permissions are only read.
+
+
+	We can also modify the file permissions:
+
+		> chmod
+ 	 	  This is used to change the permission of user/group/others.
+      	 To change we use
+          u-user
+ 	  g-group
+	  o-others
+          a-for all
+      
+     	  And also
+          	To add  : +
+         	To delte: -
+
+	Some example commands:
+	    : chmod u+x <filename>
+              This command add execute permission to the user of specified file.
+
+            : chmod u-r <filename>
+               This command remove read permission to the user of specified file.  
+ 	
+	    : chmod g+w <filename>
+               This command add write permission to the group of specified file.
+	  
+	    : chmod o+x <filename>
+		This command add execute permission to the other of specified file.
+
+	    : chmod a-r <filename>
+		It removes read permission for all of them.
+
+
+
+There are two types of links:
+1.Hard link
+2.Symbolic link
+
+
+HARD_LINKS:
+
+
+	In this we have to know the inode number.The number which is uniquely assigned to a file/folder is called inode.
+	If we link a file to a existing file then it create a file with the same inode number, then we can say that the hard 
+	link of a file is 2.
+
+	So hard links represents the number of files which are having same inode number.
+
+	Flag : -i
+		  It displays the inode number of a file .
+
+
+	Command:
+   		ln sourcefile destinationfile
+
+	Ex:   ln hari code:
+            It creates a file called code having 2 hardlinks.
+            Here the files hari and code have the same inode number and also the content of hari also present in code.
+  	If we made changes in one file, it also appears in another file.Hence the files hari and code have two
+	hard links.
+
+
+	Symbolic_Link:
+	It just create link to that file and the inode number for both of them are different.It just create a link file to
+	that specified file.
+		We can also say that it is just like a shortcut of that file.
+
+   	  > ln -s sourcefile destinationfile
+
+
+
+USER AND GROUP:
+
+
+	We can also change the user/ownership and group, but for this modification we have to be a root user.
+	
+	Ownership/user:
+
+	cmd: chown newuser <filename>
+		Ex: chown root hari: Here the user for hari is changed to root.
+
+			
+	Group change:
+	cmd: chgrp new user <filename>
+		Ex: chgrp haritha file : Here the group of file is changed to haritha.
+
+	But if we change group/owner ship for a directory, it will not effect on the files within the directory just it 
+	changes for the folder only.
+		Ex:
+         	  Directory: Haritha
+          	  Files : java python
+             	  Here the directory Haritha and files java,python have the root as owner.
+		  
+		cmd: chown coder Haritha
+			--> It changes the owner root to coder only for the directory not for the files java and python.
+	
+	To change the files ownership with the directory modification we use recursive changing.
+		cmd: chown -R coder <filename>
+                   
+	It also works for group changing: chgrp -R coder <filename>
+
+exit: 
+       This command is exits from any other user to root user directly.
+
+Files:
+	1. /etc/passwd : It displays all users and passwords.
+	2. /etc/group  : It displays group details.
+	3. /etc/shadow : It displays passwords in an encrypted form.
+
+
+
+COMMANDS:
+
+  
+	1. cmd: useradd <username>
+            > It adds an user.
+	2. cmd: userdel <username>
+	3. cmd: groupadd <groupname>
+	4. cmd: groupdel <groupname>
+	5. cmd: usermod <username>
+		We can check the updates through the above files.
+
+
+
+
+CHMOD USING NUMERIC CHARACTERS: Here we use numericals to change permissions of user,group,others.
+
+
+NUMBER                            REPRESENT                            STATUS
+
+  0			        No Permission 				--- 
+
+  1				  Execute				--x
+
+  2				   write				-w-
+
+  3				execute & write				-wx
+
+  4				    read				r--
+
+  5				read & execute				r-x
+
+  6				read & write 				rw-
+
+  7				read,write,execute			rwx
+
+
+
+
+
+

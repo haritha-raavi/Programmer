@@ -1,0 +1,83 @@
+TCP & IP:
+
+
+	Transmission control Protocol:
+					  Responsible for transferring of the data betweeen the source and destination.
+   	It packes the data into frames called data frame. In the successful transfer of data from source to destination,
+	there should be a person who takes care of it ,that person is called TCP.
+
+
+	Internet Protocol:
+			The IP takes care of the responsibility to choose the shortest path or way for transferring.
+
+
+ARCHIVAL:
+
+	It will group all the files into a one and then transfer to destination.Memory is still same after grouping them
+	also. It will not a compression tecnique ,it is different.
+
+
+COMPRESSION TECHNIQUE:
+
+
+		It comprises the files, so that the memory is reduced.To perform this we have techniques which are differ
+	from OS to OS.
+
+	For Windows:
+		In windows we have compression technique called zip, it is default for windows.
+		
+	For Linux:
+		In Linux also we have zip technique, but the default technique is tar.
+		The techniques are:
+			1.tar.gz
+			2.tar.bz2
+
+
+	To apply ZIP :
+		cmd: zip <archivename> files names which are to be zipped
+			Ex: zip hari.zip f1 f2
+        To UNZIP:
+		cmd: unzip <archivename>
+			Ex: unzip hari.zip
+ 
+
+
+Commands for TAR:
+
+
+		Flags:
+		  --> -c : Create a new archive
+		  --> -v : Verbose output
+				Display all the contents that goes into archival
+		  --> -f : Use archive file as name
+		  --> -z : Apply the compression technique (gzip).
+		  --> -j : Apply the compression technique (bzip2).
+		  --> -t : List all the contents in an archive.
+		  --> -x : Extract of all files from the archive
+			
+	Archival:
+                
+     	 	To create:
+ 		cmd: tar -cvf archivename.tar files to be added.
+                      --> tar hari.tar f1 f2 f3
+                              // An archive is created with files f1,f2,f3.
+		To Extract:
+		cmd: tar -xf archivename
+			// files are extracted from the archival.
+
+	
+	tar.gz:
+
+		To create: 
+		cmd:tar -cvzf archivename.tar.gz <files>
+
+		To extract:
+		cmd: tar -xzf archivename.tar.gz
+
+	tar.bz2:
+		
+		To create:
+		cmd: tar -cvjf archivename.tar.bz <files>
+
+		To extract:
+		cmd: tar -xjf archivename.tar.bz

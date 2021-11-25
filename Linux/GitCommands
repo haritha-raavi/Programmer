@@ -1,0 +1,42 @@
+1.git config: 
+    usage:git config --global user.name <user-name>
+    usage:git config --global user.email <user-email>
+    -->  This command is used to set the author name and email address repectively to be used with your commits.
+    usage:git config --list
+    -->It lists all the details of the git 
+2.git init:
+    usage:git init 
+    -->This command is used to start a new repository.
+3.git add
+    usage:git add <file>
+    -->This command used to add a file to the staging area.
+4.git commit:
+    usage:git commit -m "message"
+    -->This command records or snapshots the file permanently in the version of history.
+5.git clone:
+    usage:git clone <URL>
+    -->This is used to obtain a repository from an existing URL.
+6.git pull:
+    usage:git pull <URL>
+          git pull origin
+    -->It is used to pull the info from remote repository to local repository.
+7.git status:
+    usage:git status
+    -->It shows all the files that have to be committed.
+8.git push:
+    *usage:git remote add origin <URL>
+    -->Above command adds the remote repository URL to local repository and refers to this remote repository as origin.
+    *usage:git push origin <branch name>/git push -u origin <branch name>
+    -->It push all your local changes to remote repository changes.Here u means update.
+9.git remote:
+    usage:git remote -v:
+    -->Thid should show the remote repository link which you have added for pull and push operations.
+10.git remove:
+    usage:git rm <filename>
+    -->it deletes the file from repository.
+
+11.git branch:
+    usage:git branch
+    -->It displays our branch.
+
+

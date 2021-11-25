@@ -1,0 +1,296 @@
+BASIC COMMANDS OF LINUX:
+
+
+	>> pwd
+          Display the present working directory.
+      
+        >> cd 
+           cd /     : Takes to root node.
+	   cd       : It also takes to root node.
+	   cd ..    : Takes back into one previous director.
+	   cd <dir> : It goes to mentioned directory.
+
+        >> mkdir <dir-name>
+           It creates a new directory with a specified name.
+
+        >> rm/rmdir
+	   rm <file-name> : It removes the file which are in the present directory.
+	   rm *           : It deletes all the files from the present directory not the folders/directories.
+	   rmdir <dir>	  : It deletes the directory if it is empty. It doesn't delete the directory if its have content.
+	   rm -r <dir>    : It recursively deletes contents in it and then directory. If it cause any errors you can 
+				forcefully delte if you want...rm -rf <dir>.
+        >> touch <file-name>
+	     To create empty files.
+	
+	>> clear
+             Clears the terminal.
+
+	>> whoami
+	     It tells the present user name.
+
+
+FLAGS: 
+Each character comprises it owns operation.
+
+
+	>> ls 
+            Lists the files in the present directory in the fashion of colummns.
+
+	> -l
+	     It displays files line by line according to the alphabetical order in the present directory.It doesn't display 
+		the files of subdirectories.
+
+	>> -a
+            It displays the hidden files of the directory.
+        
+ 	>> -s
+	   It gives the size of files.
+
+	>> -h
+	   It displays the size in the human readable format.
+
+	>> -t      
+	   It sorts the files based on the C time(Time of modification).
+	   
+	>> -r
+           It reverses the sequence of the files.
+
+	>> -R
+ 	   It recursively displays the contents of sudirectories of subdirectories.
+
+	>> *
+            It recdisplays contents of upto one subdirectory.
+
+	>> * <character/name>
+            It shows all the contents which are having the specified name.
+
+	>> -g
+	    It works similar to the flag "-l" but only difference is it doesn't the display the user name.
+
+	>> -d
+            It display the directory itself which is hidden file(.).
+
+	>> ls -l <name>*
+	     The command gives the contents which are started with specified.
+
+	
+	>> >> ls -l --author
+		It displays the author info along with user and group.
+
+
+
+
+PIPES:
+It combines the two commands.The output of first command is given to second command as input.
+
+
+
+	>> grep: It is used for searching the contents.
+
+	    ls -l | grep <file-name>
+                This command searches for a specified file. In the ouput the matching contents are highlighted.
+
+
+	>> more/less
+	  
+           ls -l | more/less
+		Here both more and less are used for same operaton/function. This command shows the contents one page 
+		at a time, with the help of enter and spacebar we go for the next page. "q" is used to exit from it.  
+
+	>> tail
+ 
+           ls -l | tail -7
+                It displays the last 7 files in the present directory including files,directories,links etsc...  
+       
+           ls -l | tail
+               Defaultly it displays 10 contents.
+               
+           tail -10 <filename>
+		It displays the contents of specified folder.
+
+
+	>> head
+ 
+           ls -l | head -7
+                It displays the first 7 files in the present directory including files,directories,links etsc...  
+       
+           ls -l | head
+               Defaultly it displays 10 contents.
+               
+           head -10 <filename>
+		It displays the contents of specified folder.
+
+
+
+REDIRECTING:
+
+	Two types:
+	  > : single redirect
+	  >>: double redirect
+
+ 	These are used to push contents to specified one.
+
+echo:
+	It basically prints the contents whatever you give within in the quotes in the console screen.
+		   > echo "Hello Linux"
+		      o/p: Hello Linux
+
+		> echo
+		    It just give a new line.
+
+	And also there is an another use of echo, we can give input to the files.
+       		 cmd: echo "hello" > (filename)
+                          	   |
+                      		redirecting
+
+         Pushing the "hello" into the specified file.But it erases all the previous contents in the file, only the present 
+    given info can get saved. To overcome that we use double redirect.
+ 	
+	cmd: echo "hiii" >> (filename)
+ 		This command append the content to the previous content.
+		Every time you call a echo it comes on new line.
+
+
+
+	
+COPY:
+	This copies contents from one file to another file. we can copy data either to an existing file or a new file.
+           cp sourcefile destination file.
+
+	 ex: cp hari code
+		If the code file is not present , then it creates a file called code and copy the contents into it.
+
+	cmd : cp -r sourcefile destinationfile
+		It recursively copies all the data/files etc...
+
+
+MOVE:
+	This is used to rename a file and to move file from one location to another location.
+
+	        : mv file file1
+			Here the file name is changed to file1.
+		: mv file \path
+			The file is moved into specified path.
+
+
+cut:
+       This is used to display the number of characters we want from each column.
+		cmd: cut -c1 <filename>
+			It is going to display the first 1 character of all contents of the specified file.
+	
+		cmd: cut -c1-5 <filename>
+			It diplays 1-5 characters.We can also use as many as we want. If there is no characters in that 
+		particular space then it leaves a blank space.
+
+awk:
+	This represents content according to specified number of columns.
+		cmd: awk '{print $1}' <filename>
+			It prints the first column words in each column.
+		
+		cmd: awk '{print $2}' <filename>
+			It prints the second column words in each column.
+		
+		-->columnn is diffferentied through the spaces.
+
+
+grep:
+	It is used to search a particular file or character.
+		cmd: grep <word/ch to be searched> <filename>
+			It searches in the entire file for given word and produces ouput.
+
+cat:
+	It is used to read a file.
+		cmd: cat <filename>
+
+unique:
+	Before performing it we need to sort the file.
+		cmd: sort <filename>
+	
+	cmd: uniq
+		It gives the data which dont have duplicates.sort 
+        Ex: cat <filename> | sort | uniq
+
+wordcount:
+
+		It dispalys
+			1.No.of lines
+			2.No.of words
+			3.No.of characters
+			4.filename
+		cmd: wc <filename>
+			It gives the above mentioned details.
+
+		cmd: cat <filename> | wc -l
+			It displays no.of lines present the directory.
+
+
+
+HELP_COMMANDS:
+
+1. whatis
+2. man <cmd>
+3. <cmd> --help
+
+		These are the helping commands we use to know about the paricular command.But for some of the commands
+	dont have any helping commands. The man command should produce the output in a human format.
+
+
+		
+Finding System Information:
+
+commands:
+	1. uname	: one line info of system.
+	2. uname -a     : It gives some more info of the system.
+	3. dmidecode
+		--> To run this we have to be root user. It gives all info about the system.
+	4. hostname    : gives about the host.
+
+
+
+System Utility:Commands
+
+
+	1.uptime  : By this we are ablt to know how long the system has been running.
+	2.date	  : It diplays the current day details.
+	3.cal 	  : It gives the calender details.
+		---> cmd: cal <year>
+			It displays the entire calender details of that year.
+		---> cmd: cal <month> <year>
+			It displays of that month of that year.
+				we can check any date by this command.
+	4. which
+		---> By this we easily find out the version oa software or anything else. 
+        5. top     : It displays top files which are currently using by CPU.
+	6. kill processid : To kill the process.
+
+	7. history : It displays the history.
+
+	8. history -c : It clears the history.
+
+	9. shutdown : diplays all the schedule time to shutdown and goes off.
+
+	10. ctrl+D: It will shutdown the system.
+
+
+CRONTAB: For regular backups
+
+	crontab -e  : To edit the schedule.
+	crontab -l  : To list the crontab.
+	
+	Schedule the shell to execute in a particular time:
+	
+	   * * * * * /path/to/script.sh
+	   1 2 3 4 5
+
+
+	1(*): Minutes(0-59)
+	2(*): Hours (0-23)
+	3(*): Day of month (0-31)
+	4(*): Month of year 
+	5(*): Day of the week
+         
+	--> if we leave it as * it will execute for every minute,hour,etc..
+
+
+
+

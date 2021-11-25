@@ -1,0 +1,44 @@
+
+Linux Operating System:
+        
+             The linux operating system is an open source operating system. In this the file system is arrranged in an 
+  heirarichal manner. The very first node is /(root). Every file can be accessed through this root node only.
+     
+              An Example view of the linux file system:
+
+                                                           /
+
+                                          bin   etc  boot   dev  root  lib  home   media
+    
+          Like this the linux-file-system is arranged. If we want to access the folder 'boot' then we go for the "/boot".
+     In this way the other folders can be  accessed or navigated.
+
+Types of Linux File system are:
+
+>..EXT3
+>..EXT4
+>..XFS
+>..FAT
+>..NTFS
+
+
+The Linux Distributions are:
+
+1.Ubuntu
+2.Redhat
+3.Fedora
+4.Centos
+5.Debain
+6.Suse   etc...
+
+To install Linux / other OS:
+
+      We need to install the "Oracle virtual Box"  which allows to have multiple OS n our system.
+
+                                   LINUX     WINDOWS    MACOS
+                               -------------------------------------
+                                        Oracle virtual Box
+                               -------------------------------------
+                                            WINDOWS
+                              ---------------------------------------
+                                           HARDWARE

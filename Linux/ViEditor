@@ -1,0 +1,51 @@
+VI EDITOR:
+	We can create a file with content.And also we can modify of the content of the file which is already exist.
+	
+	There are many editors:
+		Elvis 
+		Nvi
+		nano
+		vile etc..
+    	The modified version of vi editor is "VIM".It is the easiest and preferable editor.
+	
+	In this we have two modes:
+		1.command mode
+		2.insert mode
+	
+
+	1.Command Mode:
+		Once we enter into editor it is by default open in a command mode.Here what we text is considered as a 
+		command.
+		The commands are:
+		
+			--> esc : Comes out of the insert mode and goes into command mode. 
+			--> i   : Comes out of command mode and goes into inser mode.
+			--> dd  : Deletes the current line where the cursor is pointing (entire).
+			--> u   : Undo the last changes.
+			--> U   : Undo all changes to entire file.
+			--> o   : open a new line.
+			--> 3dd : It deletes three lines from the cursor.
+			--> D   : Delete the total content after the cursor.
+			--> C   : Delete the contents of a line after the cursor and takes input as well. Use esc or q to 
+				  exit from this input insertion mode.
+			--> dw  : delete a word at the cursor.
+			--> 4dw : delete four words from the cursor.
+			--> cw  : change the word.
+			--> x   : Delete the character.
+			--> r   : replace the character.
+			--> gg  : Take your cursor to the first character of your file.
+			--> dG  : Delete all the text inside a file.
+
+ 
+			esc + : + w        --> It comes out of insert mode and save the content.
+			esc + : + q        --> It exit from the editor without saving the content.
+			esc + : + w + q    --> It comes out of editor by saving the text.
+			esc + shift + zz   --> It also comes out of editor by saving the text in it.
+
+				"But esc + : + w + q" --> It is preferrable.
+
+	
+	2.Insert Mode:
+		In the insert mode we can give input to the file. "i" command is used to enter into inser mode.
+		everything you type consider as text.
+		

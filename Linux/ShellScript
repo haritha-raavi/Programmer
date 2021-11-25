@@ -1,0 +1,23 @@
+Shell Script Programs:
+
+It behaves as command line interpreter to Linux.
+The files having extensions:
+1  ".sh"
+2  ".bash"
+    -->We will these extensions to create shell script file.
+
+	
+Every program shouls start with :
+                        
+          #!/bin/bash    (or)
+          #!/bin/sh
+
+To run script:
+
+	./filename.extension
+	Ex:  ./hari.sh	
+
+
+     By default Linux removes all the executable permission.To run a shell script we have to give permission for execution.
+
+
