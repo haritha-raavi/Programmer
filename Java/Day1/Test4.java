@@ -9,7 +9,7 @@ public class Test4
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the values");
 		for (int i=0;i<3;i++)
-		{
+		{ 
 			String s=sc.next();
 			String x=sc.next();
 			if(s.length()<8)

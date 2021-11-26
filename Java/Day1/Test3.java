@@ -13,7 +13,7 @@ public class Test3
 		Scanner sc=new Scanner(System.in);
 		i=sc.nextInt();
 		d=sc.nextDouble();
-		s=sc.nextLine();
+		s=sc.nextLine(); 
 		s=sc.nextLine();
 		sc.close();
 		System.out.println("String:"+s);

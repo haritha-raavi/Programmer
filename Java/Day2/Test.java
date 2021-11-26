@@ -8,7 +8,9 @@ public class Test
 	{
 		double temp;
 		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter no of queries:");
 		int t=sc.nextInt();
+		System.out.println("Enter the values of a,b,n:");
 		for(int i=0;i<t;i++)
 		{
 			int a=sc.nextInt();
