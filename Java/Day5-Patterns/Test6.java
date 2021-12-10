@@ -1,8 +1,8 @@
-//pattern programs:
+//pattern programs-6:
 
 import java.util.Scanner;
 
-public class Test7
+public class Test6
 {
 	public static void main(String arg[])
 	{
@@ -12,21 +12,21 @@ public class Test7
 		for(int i=1; i<=n; i++)
 		{	
 			for(int k=1 ; k<=n-i; k++)
-				System.out.print(" ");	
+				System.out.print("  ");	
 			for (int j=1; j<=i; j++)			
-				System.out.print(j+" ");
+				System.out.print("* ");
 			System.out.println();
 		}
 	}
 }
 
 
-Sample Input 0:
+Sample Input 0: 
 5
 
 Sample Output 0:
-    1
-   1 2
-  1 2 3
- 1 2 3 4
-1 2 3 4 5
+        *
+      * *
+    * * *
+  * * * *
+* * * * *
