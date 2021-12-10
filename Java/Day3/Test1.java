@@ -36,15 +36,13 @@ public class Test1
 }
 
 
-/*
-Sample Input:
 
+Sample Input 0:
 Enter the no.of test cases:5
 -150 150000 1500000000 213333333333333333333333333333333 -1000000000000000
 
 
-Sample Output:
-
+Sample Output 0:
 -150 Can be fitted in:
 * short
 * int
@@ -58,5 +56,3 @@ Sample Output:
 213333333333333333333333333333333 can't be fitted anywhere.
 -1000000000000000 Can be fitted in:
 * long
-
-*/

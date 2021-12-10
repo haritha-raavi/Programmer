@@ -20,19 +20,16 @@ public class Test4
 	}
 }
 
-/*Sample inputs and outputs:
 
-Test Case-1:
-input:
+
+Sample Input 0:
 0
-output:
+Sample Output 0:
 Good job
 
 
-Test Case-2:
-input:
-989
-output:
-Wrong answer
 
-*/
+Sample Input 1:
+989
+Sample Output 1:
+Wrong answer

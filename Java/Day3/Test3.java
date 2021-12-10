@@ -25,30 +25,28 @@ public class Test3
 	}
 }
 
-/*Sample inpute and outputs:
 
-Test Case-1:
-input:
+Sample Input 0:
 989
 5
 
-ouput:Invalid Input.
+Sample Output 0:
+Invalid Input.
 
 
-Test Case-2:
-input:
+
+Sample Input 1:
 -99
 0
 
-ouput:
+Sample Output 1:
 java.lang.Exception:Breadth and Height must be positive
 
 
-Test Case-3:
-input:
+
+Sample Input 2:
 8
 5
 
-output:
+Sample Output 2:
 40
-*/
