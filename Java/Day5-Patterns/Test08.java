@@ -1,20 +1,24 @@
-//pattern programs-7:
+//pattern programs-8:
 
 import java.util.Scanner;
 
-public class Test7
+public class Test08
 {
 	public static void main(String arg[])
 	{
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt();
 		s.close();
-		for(int i=1; i<=n; i++)
+		for(int i=0; i<n; i++)
 		{	
-			for(int k=1 ; k<=n-i; k++)
+			int t=n-i;
+			for(int k=0 ; k<n-i-1; k++)
 				System.out.print(" ");	
-			for (int j=1; j<=i; j++)			
-				System.out.print(j+" ");
+			for (int j=0; j<=i;j++)	
+			{		
+				System.out.print(t+" ");
+				t++;
+			}
 			System.out.println();
 		}
 	}
@@ -25,8 +29,8 @@ Sample Input 0:
 5
 
 Sample Output 0:
-    1
-   1 2
-  1 2 3
- 1 2 3 4
+    5
+   4 5
+  3 4 5
+ 2 3 4 5
 1 2 3 4 5

@@ -1,17 +1,20 @@
-//Pattern programs-1:
+// Pattern Programs-5:
 
 import java.util.Scanner;
-public class Test1
+
+public class Test05
 {
 	public static void main(String arg[])
 	{
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt();
 		s.close();
+		char c='A';
 		for (int i=1; i<=n; i++)
 		{
 			for (int j=1; j<=i; j++)
-				System.out.print(j+" ");
+				System.out.print(c+" ");
+			c++;
 			System.out.println();
 		}
 	}
@@ -19,12 +22,12 @@ public class Test1
 
 
 
-Sample Input 0 :
+Sample Input 0:
 5
 
 Sample Output 0:
-1
-1 2
-1 2 3
-1 2 3 4
-1 2 3 4 5
+A
+B B
+C C C
+D D D D
+E E E E E

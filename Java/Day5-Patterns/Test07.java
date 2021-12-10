@@ -1,8 +1,8 @@
-//pattern programs-9:
+//pattern programs-7:
 
 import java.util.Scanner;
 
-public class Test9
+public class Test07
 {
 	public static void main(String arg[])
 	{
@@ -11,28 +11,22 @@ public class Test9
 		s.close();
 		for(int i=1; i<=n; i++)
 		{	
-			char c='A';
 			for(int k=1 ; k<=n-i; k++)
 				System.out.print(" ");	
-			for (int j=1; j<=i; j++)
-			{			
-				System.out.print(c+" ");
-				c++;
-			}
+			for (int j=1; j<=i; j++)			
+				System.out.print(j+" ");
 			System.out.println();
 		}
 	}
 }
 
 
-
 Sample Input 0:
 5
 
 Sample Output 0:
-    A
-   A B
-  A B C
- A B C D
-A B C D E
-
+    1
+   1 2
+  1 2 3
+ 1 2 3 4
+1 2 3 4 5

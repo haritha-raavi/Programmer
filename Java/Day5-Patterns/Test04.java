@@ -1,7 +1,7 @@
 //Pattern programs-4:
 
 import java.util.Scanner;
-public class Test4
+public class Test04
 {
 	public static void main(String arg[])
 	{
