@@ -30,3 +30,20 @@ public class SolidDiamond
         printResult(n);
     }
 }
+
+/*
+Sample Input :
+10
+Sample Output:
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+* * * * *
+ * * * *
+  * * *
+   * *
+    *
+
+*/

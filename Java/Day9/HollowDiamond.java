@@ -40,3 +40,19 @@ public class HollowDiamond
         printResult(n);
     }
 }
+
+/*
+Sample input :10
+Sample output:
+    *
+   * *
+  *   *
+ *     *
+*       *
+*       *
+ *     *
+  *   *
+   * *
+    *
+
+*/

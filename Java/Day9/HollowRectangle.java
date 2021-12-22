@@ -37,3 +37,15 @@ public class HollowRectangle
         printResult(rows,columns);
     }
 }
+
+
+/*
+Sample Input :
+Enter rows and columns count: 3 5
+Sample Output:
+* * * * *
+*       *
+* * * * *
+
+
+*/

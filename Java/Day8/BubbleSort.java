@@ -42,3 +42,15 @@ public class BubbleSort {
         sort(arr,size);
     }
 }
+
+
+/*Sample Output--
+Enter array size:10
+Enter array elements:
+56 3 87 22 11 33 99 1 001 35
+Before sorting:
+56      3       87      22      11      33      99      1       1       35
+After sorting:
+1       1       3       11      22      33      35      56      87      99
+
+*/

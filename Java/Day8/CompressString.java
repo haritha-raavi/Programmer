@@ -27,3 +27,12 @@ public class CompressString
         }
     }
 }
+
+/*
+Sample Input -0
+hhhhjjjjuuuaaannnfff
+
+Sample Output -0
+h4j4u3a3n3f3
+
+*/

@@ -26,3 +26,20 @@ public class SolidHalfDiamond
         printResult(n);
     }
 }
+
+/*
+Sample Input :
+10
+Sample Output:
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+
+
+*/

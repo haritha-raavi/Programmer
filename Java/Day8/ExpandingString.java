@@ -55,3 +55,10 @@ public class ExpandingString
 
     }
 }
+
+/*
+Sample input 0:
+a3b4c12d1
+Sample output 0:
+aaabbbbccccccccccccd
+*/

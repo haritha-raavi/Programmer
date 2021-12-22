@@ -1,47 +1,45 @@
-//program for performing insertion sort...
-
+//program to perform the insertion sort..
 import java.util.Scanner;
-public class InsertionSort {
+public class InsertionSort
+{
     public static void printArray(int array[],int size)
     {
         for(int i=0;i<size;i++)
         System.out.print(array[i]+"\t");
     }
-    public static void sort(int array[], int size)
+    public static void sort(int array[])
     {
-        int sortArray[] = new int[size];
-        for(int i=0; i<size; i++)
+        int n=array.length;
+        for(int j=1; j<n; j++)
         {
-            sortArray[i]=array[i];
-            for(int j=0; j<=i; j++)
+            int i=j-1;
+            int key=array[j];
+            while((i>-1) && (array[i]>key))
             {
-                if(j!=i)
-                {
-                    if(sortArray[j]>sortArray[j+1]);
-                    {
-                        int temp=sortArray[j];
-                        sortArray[j]=sortArray[j+1];
-                        sortArray[j+1]=temp;
-                    }
-                }
+                array[i+1]=array[i];
+                i--;
             }
+            array[i+1]=key;
         }
-        printArray(sortArray,size);
+        printArray(array,array.length);
     }
-
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.print("Enter array size:");
-        int size=scan.nextInt();
-        int arr[] = new int[size];
-        System.out.println("Enter array elements:");
-        for(int i=0; i<size; i++)
+        int n=scan.nextInt();
+        int arr[] = new int[n];
+        for(int i=0; i<n; i++)
             arr[i]=scan.nextInt();
         scan.close();
-        System.out.println("Before sorting:");
-        printArray(arr,size);
-        System.out.println();
-        System.out.println("After sorting:");
-        sort(arr,size);
+        sort(arr);
     }
 }
+
+
+/*
+Sample input 0:
+10
+56 3 87 22 11 33 99 1 8 35
+Sample Ouput 0:
+1       3       8       11      22      33      35      56      87      99
+
+*/
