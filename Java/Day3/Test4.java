@@ -10,6 +10,7 @@ public class Test4
 	{
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
+		sc.close();
 		if (n>=-100 && n<=100)
 		{	
 				String s=n+" ";
@@ -20,7 +21,7 @@ public class Test4
 	}
 }
 
-
+/*
 
 Sample Input 0:
 0
@@ -33,3 +34,6 @@ Sample Input 1:
 989
 Sample Output 1:
 Wrong answer
+
+
+*/
