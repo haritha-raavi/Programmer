@@ -24,3 +24,10 @@ public class ArrangeString {
 
     }
 }
+
+
+Sample input 0:
+10101010100011
+
+Sample output 0:
+00000001111111

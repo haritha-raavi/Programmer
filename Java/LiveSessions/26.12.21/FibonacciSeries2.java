@@ -18,3 +18,9 @@ public class FibonacciSeries2 {
     }
     
 }
+
+
+Sample input 0:
+10
+sample output 0;
+0 1 1 2 4 7 13 24 44 68
