@@ -1,0 +1,63 @@
+STRINGS:
+
+
+String is a sequence of characters.
+
+We can declare a string in two ways:
+--> String literals
+--> String object
+
+String literal:
+    String s="hello";
+    When we define a literal the value get stored in "String Constant Pool" , if we define another literal with 
+    same value then it doesnt create a new object just assign a reference to thet variable.
+    
+
+String object:
+    It creates a object in heap memory and value is stored in string Constant poool.
+    String s= new String();
+        ->It creates a empty string object.
+    In strings we have more number of different constructors.
+
+CONSTRUCTORS:
+
+1.  String s = new string("hello");
+2.  String s1="hello";
+    String s1 = new String(s1);
+
+3.  Using character array:
+    char ch[]={'h','e','l','l','o'};
+    String s= new String(ch);
+    -->we can also specify index of char array from where it has to take to the string.
+        String s = new String(ch,beginIndex,numChars);
+        beginIndex= From this index value the chars are stored in string.
+        numChars=From beginIndex numbers of characters to be stored is given by numChars.
+    String s = new String(ch,2,3);
+    output:
+    'll0'
+
+4.  Using byte array:
+        byte ascii[]={65,66,67,68,69,70};
+        String s = new String(ascii);
+        output:
+        ABCDEF
+
+
+STRING METHODS:
+
+1.char charAt(int index)
+    Returns the character of the string at given index.
+    Ex: "hello".charAt(3);
+    output: l
+
+2. int length()
+    It returns the count of characters in the string.
+    Ex: "hello".length();
+    output: 5
+
+3. ==
+    It checks for equality on references of strings.
+
+4 .equals()
+5.equalsIgnoreCase()
+6.compareTo()
