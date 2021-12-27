@@ -14,24 +14,44 @@ public class MergeSort
         }
     } 
     public static void merge(int array[],int l,int mid,int h)
-    {
-        int n1=mid-l+1;
-        int n2=h-mid;
-        int lArray[]= new int[n1];
-        int rArray[] = new int[n2];
-        for(int i=0; i<n1; i++)
-            lArray[i]=array[l+i];
-        for(int j=0; j<n2; j++)
-            rArray[j]=array[mid+1+j];
-        int i=0 , j=0 ,k=l;
+    {   
+       int n1=mid-l+1;
+       int n2=h-mid;
+       int A[]=new int[n1];
+       int B[]=new int[n2];
+       for(int i=0;i<n1; i++)
+            A[i]=array[l+i];
+       for(int i=0;i<n2; i++)
+            B[i]=array[mid+1+i]; 
+        int i=0,j=0,k=l;
         while(i<n1 && j<n2)
         {
-            i
+            if(A[i]<=B[j])
+            {
+                array[k]=A[i];
+                i++;
+            }
+            else{
+                array[k]=B[j];
+                j++;
+
+            }
+            k++;
         }
+        while(i<n1)
+        {
+            array[k]=A[i];
+            i++;
+            k++;
 
+        }
+        while(j<n2)
+        {
+            array[k]=B[j];
+            j++;
+            k++;
 
-
-
+        }
     }
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -47,3 +67,10 @@ public class MergeSort
         }
     }
 }
+
+Sample input 0:
+10
+4 2 77 5 1 8 3 21 9 10
+
+Sample Output 0:
+1       2       3       4       5       8       9       10      21      77
