@@ -18,13 +18,13 @@ public class ExpandingString
     public static void main(String[] args) 
     {
         Scanner scan = new Scanner(System.in);
-        String str=scan.nextLine();//a1b10c1
+        String str=scan.nextLine();
         scan.close();
         char alphabets[] = new char[str.length()];
         int numbers[] = new int[str.length()];
 
         int x=0, y=0, totalDigits=0;
-        for(int i=0; i<str.length(); i++)
+        for(int i=0; i<str.length(); i++)//a1b10c3
         {
             if(Character.isLetter(str.charAt(i)))
             {
