@@ -22,12 +22,12 @@ public class Test05
 
 
 
-Sample Input 0:
-5
+// Sample Input 0:
+// 5
 
-Sample Output 0:
-A
-B B
-C C C
-D D D D
-E E E E E
+// Sample Output 0:
+// A
+// B B
+// C C C
+// D D D D
+// E E E E E
