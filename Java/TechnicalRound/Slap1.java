@@ -1,7 +1,15 @@
+/*
+    We have to print the words lexicographically that are repeated in the given input string.
+    Sample Input: 
+    cat batman latt matter cat matter cat
+    Sample ouput:
+    cat matter
+ */
 import java.util.*;
 public class Slap1 {
     public static TreeMap<String, Integer> tm = new TreeMap<String, Integer>();
     public static void main(String[] args) {
+        
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         sc.close();
