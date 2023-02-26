@@ -1,0 +1,4 @@
+    background-image: linear-gradient(135deg, cyan 0%, cyan 100%)
+
+
+display: inline-block;

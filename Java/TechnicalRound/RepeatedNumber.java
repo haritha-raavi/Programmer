@@ -10,7 +10,6 @@
   1
  */
 import java.util.*;
-
 public class RepeatedNumber{
     public static HashMap<Integer, Integer> hm = new HashMap<Integer, Integer>();
     public int findNumber(int a[], int size){
